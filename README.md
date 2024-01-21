@@ -1,10 +1,10 @@
-### Project README
+# Project README
 
-## Overview
+### Overview
 
 This project is a web scraper that crawles corporate datas from rank.glassdollar.com . The application uses RabbitMQ as a message broker for Celery tasks and SpaCy for natural language processing to clustering data.
 
-# Components
+### Components
 
 FastAPI Server (fastapi_server.py): Implements the web API, providing endpoints to initiate and get result of Celery tasks.
 Celery Module (celery_module.py): Defines Celery tasks and configurations, including task queuing and processing logic.
@@ -17,7 +17,7 @@ Clone the repository: `git clone https://github.com/kadirchan/glassdollar-crawl.
 
 Run docker: `docker compose up --build`
 
-# Usage
+### Usage
 
 Initiate task: `localhost:8000/get-corporates/`
 
