@@ -5,7 +5,7 @@ import spacy
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import KMeans
 
-app = Celery('your_app_name', broker='amqp://guest:guest@rabbitmq:5672//', backend='rpc://')
+app = Celery('celery_app', broker='amqp://guest:guest@rabbitmq:5672//', backend='rpc://')
 
 
 base_query = """
